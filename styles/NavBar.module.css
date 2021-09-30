@@ -1,0 +1,24 @@
+.wrapper{
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo{
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu{
+  display: flex;
+  gap: 1rem;
+}
+
+.shop{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
