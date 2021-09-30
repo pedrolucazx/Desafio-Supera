@@ -15,7 +15,9 @@ export default function NavBar() {
           <h2>Contato</h2>
         </div>
         <div className={styles.shop}>
+          {/* criar função para ler o valor do JSON e somar */}
           <h2>R$200,00</h2>
+          {/* criar função para ler o click */}
           <Badge badgeContent={1} color="primary">
             <ShoppingCartOutlinedIcon />
           </Badge>

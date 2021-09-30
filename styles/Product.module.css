@@ -1,0 +1,12 @@
+.product{
+  background-color: #DB7C12;
+  width: 80%;
+  border-radius: 0.8rem;
+}
+.wrapper{
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  height: 200px;
+}
