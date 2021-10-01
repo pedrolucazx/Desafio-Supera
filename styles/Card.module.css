@@ -1,24 +1,27 @@
 .container{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 1rem;
-  width: 80%;
+  margin-top: -5rem;
+  width: 60%;
+  margin-left: 5rem;
 }
 .card{
   display: flex;
   flex-direction: column;
-  gap:10px;
-  background-color: #FAFAFA80;
+  gap:1rem;
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 1rem;
   border-radius: 0.8rem;
-  margin-top: -100px;
   align-items: center;
-  color:#1479FA ;
+  width: 18rem;
+  text-align: center;
 }
 
 .buttons{
   display: flex;
   gap: 1rem;
+  margin-left: 11rem;
 }
 
 .buttons button{
@@ -30,10 +33,6 @@
   cursor: pointer;
 }
 
-.buttons button:first-child{
-  background-color: rgb(159, 255, 159);
-}
-
-.buttons button:last-child{
-  background-color: rgb(255, 155, 155);
+.buttons button:hover{
+  color: gray;
 }

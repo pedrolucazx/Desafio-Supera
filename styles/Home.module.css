@@ -1,7 +1,9 @@
 .container{
-  background: #F9A814;
-  height: 100vh;
+  background: #000000;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-top: 4.2rem;
 }

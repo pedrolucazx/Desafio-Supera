@@ -1,5 +1,8 @@
 .navbar{
   width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #000;
 }
 
 .wrapper{
@@ -7,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: #FCA311;
 }
 
 .logo{

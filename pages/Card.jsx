@@ -3,23 +3,24 @@
 import styles from '../styles/Card.module.css';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
+import data from '../products.json'
 
 export default function Card() {
   return (
     <main className={styles.container}>
-      <div className={styles.card}>
-        <img src="/call-of-duty-infinite-warfare.png" />
-        <h2>Call of Duty</h2>
-        <h3>R$200,00</h3>
-        <div className={styles.buttons}>
-          <button>
-            <AddShoppingCartIcon />
-          </button>
-          <button>
-            <DeleteOutlineIcon />
-          </button>
-        </div>
-      </div>
+      {data.map((dataProducts) => {
+        return (
+          <div className={styles.card} key={dataProducts.id}>
+            <div className={styles.buttons}>
+              <button> <AddShoppingCartIcon/> </button>
+            </div>
+            <img src={dataProducts.image} />
+            <h2>{dataProducts.name}</h2>
+            <h3>R${dataProducts.price}</h3>
+          </div>
+        )
+      }
+      )}
     </main>
   )
 }
