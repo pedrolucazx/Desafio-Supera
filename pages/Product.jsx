@@ -1,18 +1,15 @@
 import styles from '../styles/Product.module.css';
-import Drowpdown from '../pages/Dropdown';
+//import Drowpdown from '../pages/Dropdown';
+import Card from './Card';
 
 
 export default function Product() {
 
   return (
-    <div className={styles.product}>
-      <div className={styles.wrapper}>
-        <h2>Produto</h2>
-        <h2>Shop</h2>
-        <div className={styles.dropdown}>
-          <Drowpdown />
-        </div>
-      </div>
-    </div>
+    <main className={styles.product}>
+      <section className={styles.wrapper}>
+        <Card />
+      </section>
+    </main>
   )
 }

@@ -4,15 +4,10 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 export default function NavBar() {
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.wrapper}>
+    <header className={styles.navbar}>
+      <nav className={styles.wrapper}>
         <div className={styles.logo}>
           <h1>SuperaShop</h1>
-        </div>
-        <div className={styles.menu}>
-          <h2>Home</h2>
-          <h2>Shop</h2>
-          <h2>Contato</h2>
         </div>
         <div className={styles.shop}>
           {/* criar função para ler o valor do JSON e somar */}
@@ -22,7 +17,13 @@ export default function NavBar() {
             <ShoppingCartOutlinedIcon />
           </Badge>
         </div>
+        <div className={styles.button}>
+          <button> Limpar </button>
+        </div>
+      </nav>
+      <div className={styles.promo}>
+        <span>O frete é grátis para compras acima de R$ 250,00</span>
       </div>
-    </nav>
+    </header>
   )
 }
