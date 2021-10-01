@@ -9,6 +9,8 @@ export default function Product() {
     <main className={styles.product}>
       <section className={styles.wrapper}>
         <Card />
+        <Card />
+        <Card />
       </section>
     </main>
   )

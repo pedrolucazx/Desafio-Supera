@@ -4,13 +4,12 @@ import CardShop from './CardShop'
 export default function Shop() {
   return (
     <footer className={styles.shop} >
-      <section className={styles.cardShop}>
-        <ul>
-          <li>
-            <CardShop />
-          </li>
-        </ul>
-      </section>
+      <ul>
+        <CardShop />
+        <CardShop />
+        <CardShop />
+        <CardShop />
+      </ul>
     </footer>
   )
 }
