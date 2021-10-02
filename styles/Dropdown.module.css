@@ -1,0 +1,20 @@
+.listBox{
+  margin-left: 50rem;
+  font-size: 0.5rem;
+  text-align: center;
+  width: 10rem;
+}
+
+.button{
+  background-color: #e7e7e7;
+  color: #000;
+  border: none;
+  border-radius:0.5rem; 
+}
+
+.options{
+  background-color: #e7e7e7;
+  color: #000;
+  list-style: none;
+  border-radius:0rem 0rem 0.5rem 0.5rem  ;
+}
