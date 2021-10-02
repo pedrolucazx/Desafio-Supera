@@ -19,7 +19,10 @@ export default function Card() {
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   }
   return (
-    <>
+    <div className={styles.container}>
+      <button className={styles.buttons} onClick={handleLeftClick}>
+        <ArrowBackIosIcon />
+      </button>
       <div className={styles.carousel} ref={carousel}>
         {data.map((dataProduct) => {
           return (
@@ -37,14 +40,9 @@ export default function Card() {
           )
         })}
       </div>
-      <div className={styles.buttons}>
-        <button className={styles.left} onClick={handleLeftClick}>
-          <ArrowBackIosIcon />
-        </button>
-        <button className={styles.right} onClick={handleRightClick}>
-          <ArrowForwardIosIcon />
-        </button>
-      </div>
-    </>
+      <button className={styles.buttons} onClick={handleRightClick}>
+        <ArrowForwardIosIcon />
+      </button>
+    </div>
   )
 }

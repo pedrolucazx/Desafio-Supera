@@ -6,6 +6,7 @@ export default function Product() {
 
   return (
     <main className={styles.product}>
+      <Drowpdown />
       <Card/> 
     </main>
   )

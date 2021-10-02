@@ -1,9 +1,16 @@
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  gap: 1rem;
+}
+
 .carousel{
   display: flex;
   scroll-behavior: smooth;
-  width: 80%;
   overflow: hidden;
-
 }
 
 .card{
@@ -65,25 +72,12 @@
 }
 
 .buttons{
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
-   
-
-}
-.buttons button{
   background: transparent;
   border: none;
   cursor: pointer;
   color: #fff;
-  position: absolute;
-  top:20rem;
-
-}
-
-.left{
-  left: 100px;
-}
-
-.right{
-  right: 100px;
 }
