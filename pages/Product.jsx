@@ -1,13 +1,13 @@
 import styles from '../styles/Product.module.css';
 import Drowpdown from '../pages/Dropdown';
-import Card from './Card';
+import Carousel from './Carousel';
 
 export default function Product() {
 
   return (
     <main className={styles.product}>
       <Drowpdown />
-      <Card/> 
+      <Carousel/>
     </main>
   )
 }

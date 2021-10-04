@@ -1,14 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from '../styles/Shop.module.css'
 import CardShop from './CardShop'
-export default function Shop() {
+
+export default function Shop({ card }) {
   return (
     <footer className={styles.shop} >
       <ul>
-        <CardShop />
-        <CardShop />
-        <CardShop />
-        <CardShop />
+        {card.map((cardItem, id) => <CardShop key={id} />)}
       </ul>
     </footer>
   )
