@@ -2,12 +2,30 @@
 import styles from '../styles/Shop.module.css'
 import CardShop from './CardShop'
 
-export default function Shop({ card }) {
+
+import { CardContext } from '../contexts/CardContext'
+import { useContext } from 'react';
+
+export default function Shop() {
+
+  const { card, handleRemoveitens } = useContext(CardContext)
+
   return (
-    <footer className={styles.shop} >
-      <ul>
-        {card.map((cardItem, id) => <CardShop key={id} />)}
-      </ul>
+    <footer className={styles.container}>
+      <section className={styles.shop} >
+        <ul>
+          {card.map((cardItem, id) =>
+            <CardShop
+              key={id}
+              index={id}
+              image={cardItem.image}
+              price={cardItem.price}
+              name={cardItem.name}
+              handleRemoveitens={handleRemoveitens}
+            />
+          )}
+        </ul>
+      </section>
     </footer>
   )
 }

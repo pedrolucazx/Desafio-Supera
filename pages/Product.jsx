@@ -1,13 +1,19 @@
 import styles from '../styles/Product.module.css';
 import Drowpdown from '../pages/Dropdown';
 import Carousel from './Carousel';
+import {CardContext} from '../contexts/CardContext'
+import { useContext } from 'react';
 
 export default function Product() {
+
+  const {handleAddItens, card} = useContext(CardContext)
+
+  console.log(card)
 
   return (
     <main className={styles.product}>
       <Drowpdown />
-      <Carousel/>
+      <Carousel handleAddItens={handleAddItens} card={card}/>
     </main>
   )
 }

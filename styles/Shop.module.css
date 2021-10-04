@@ -1,11 +1,14 @@
+.container{
+  height: 100%;
+  min-height: 100vh;
+  background:#080808;
+}
+
 .shop{
   padding: 2rem 0rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background:#080808;
 }
 
 .shop ul{
