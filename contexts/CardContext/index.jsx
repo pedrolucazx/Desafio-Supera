@@ -17,8 +17,9 @@ export const CardProvider = ({ children }) => {
     );
     setCard(filteredCard);
   };
-
-  function clearShop(){};
+  function clearShop(){
+    setCard([])
+  };
 
   return (
     <CardContext.Provider value={{ card, handleAddItens, handleRemoveitens, clearShop}}>
