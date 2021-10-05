@@ -1,0 +1,12 @@
+.calc{
+  box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.25);
+  background-color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+  border-radius: 0.8rem;
+  text-align: center;
+}

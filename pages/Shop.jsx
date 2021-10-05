@@ -5,6 +5,7 @@ import CardShop from './CardShop'
 
 import { CardContext } from '../contexts/CardContext'
 import { useContext } from 'react';
+import Calc from './Calc';
 
 export default function Shop() {
 
@@ -24,6 +25,7 @@ export default function Shop() {
               handleRemoveitens={handleRemoveitens}
             />
           )}
+          <Calc />
         </ul>
       </section>
     </footer>

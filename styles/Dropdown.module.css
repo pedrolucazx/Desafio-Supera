@@ -1,5 +1,11 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0rem 4.5rem;
+}
 .listBox{
-  margin: 2rem 0rem  0rem 42.6rem ;
+  padding-top:2rem;
   text-align: center;
 }
 

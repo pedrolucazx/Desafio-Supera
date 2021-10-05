@@ -14,21 +14,23 @@ export default function MyListbox() {
   const [selectedPerson, setSelectedPerson] = useState(people[0])
 
   return (
-    <div className={styles.listBox}>
-      <Listbox value={selectedPerson} onChange={setSelectedPerson}>
-        <Listbox.Button className={styles.button}>{selectedPerson.name}</Listbox.Button>
-        <Listbox.Options className={styles.options}>
-          {people.map((person) => (
-            <Listbox.Option
-              key={person.id}
-              value={person}
-              disabled={person.unavailable}
-            >
-              {person.name}
-            </Listbox.Option>
-          ))}
-        </Listbox.Options>
-      </Listbox>
+    <div className={styles.container}>
+      <div className={styles.listBox}>
+        <Listbox value={selectedPerson} onChange={setSelectedPerson}>
+          <Listbox.Button className={styles.button}>{selectedPerson.name}</Listbox.Button>
+          <Listbox.Options className={styles.options}>
+            {people.map((person) => (
+              <Listbox.Option
+                key={person.id}
+                value={person}
+                disabled={person.unavailable}
+              >
+                {person.name}
+              </Listbox.Option>
+            ))}
+          </Listbox.Options>
+        </Listbox>
+      </div>
     </div>
   )
 }

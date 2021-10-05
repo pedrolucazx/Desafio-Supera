@@ -7,10 +7,7 @@ import { useContext } from 'react';
 
 export default function NavBar() {
 
-  const {card, clearShop} = useContext(CardContext);
-
-  const totalPrice = card.reduce(( acc, current) => acc + current.price, 0)
-  console.log(totalPrice);
+  const {card, clearShop, total} = useContext(CardContext);
 
   return (
     <header className={styles.navbar}>
@@ -21,7 +18,7 @@ export default function NavBar() {
         </div>
 
         <div className={styles.shop}>
-          <h2>R${totalPrice.toFixed(2)}</h2>
+          <h2>R${total()}</h2>
           <Badge badgeContent={card.length} color="primary">
             <ShoppingCartOutlinedIcon />
           </Badge>

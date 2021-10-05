@@ -8,8 +8,6 @@ export default function Product() {
 
   const {handleAddItens, card} = useContext(CardContext)
 
-  console.log(card)
-
   return (
     <main className={styles.product}>
       <Drowpdown />
