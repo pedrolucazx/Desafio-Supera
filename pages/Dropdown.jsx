@@ -1,36 +1,19 @@
-import { useState } from 'react'
-import { Listbox } from '@headlessui/react'
 import styles from '../styles/Dropdown.module.css'
+import { useContext } from 'react'
+import { SelectContext } from '../contexts/Select/select'
 
-
-const people = [
-  { id: 1, name: 'padrão', unavailable: false },
-  { id: 2, name: 'preço', unavailable: false },
-  { id: 3, name: 'popularidade', unavailable: false },
-  { id: 4, name: 'ordem alfabética', unavailable: false },
-]
 
 export default function MyListbox() {
-  const [selectedPerson, setSelectedPerson] = useState(people[0])
+
+  const { handleSelec } = useContext(SelectContext)
 
   return (
     <div className={styles.container}>
-      <div className={styles.listBox}>
-        <Listbox value={selectedPerson} onChange={setSelectedPerson}>
-          <Listbox.Button className={styles.button}>{selectedPerson.name}</Listbox.Button>
-          <Listbox.Options className={styles.options}>
-            {people.map((person) => (
-              <Listbox.Option
-                key={person.id}
-                value={person}
-                disabled={person.unavailable}
-              >
-                {person.name}
-              </Listbox.Option>
-            ))}
-          </Listbox.Options>
-        </Listbox>
-      </div>
+      <select onChange={handleSelec}>
+        <option value="preco">preço</option>
+        <option value="score">popularidade</option>
+        <option value="alphabetical">alfabética</option>
+      </select>
     </div>
   )
 }

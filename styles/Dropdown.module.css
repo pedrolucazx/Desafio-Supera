@@ -2,24 +2,9 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 0rem 4.5rem;
+  padding: 2rem 5rem 0rem  0rem ;
 }
 .listBox{
-  padding-top:2rem;
+  font-size: 1rem;
   text-align: center;
-}
-
-.button{
-  width: 10rem;
-  background-color: #fff;
-  border: none;
-  border-radius:  0.5rem 0.5rem 0rem 0rem;
-  padding: 0.2rem 2rem; 
-}
-
-.options{
-  width: 10rem;
-  background-color: #fff;
-  list-style: none;
-  border-radius:0rem 0rem 0.5rem 0.5rem  ;
 }
