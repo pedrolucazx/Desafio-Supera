@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '../styles/CardShop.module.css';
+import styles from '../../../styles/components/footer/CardShop.module.css';
 
 const CardShop = ({ image, name, price,index, handleRemoveitens}) => {
 

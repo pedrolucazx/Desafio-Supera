@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/alt-text */
 import { useRef } from 'react';
-import Card from '../pages/Card'
-import styles from '../styles/Carousel.module.css'
+import Card from '../../components/main/Card'
+import styles from '../../../styles/components/main/Carousel.module.css'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useContext } from 'react'
-import { SelectContext } from '../contexts/Select/select'
+import { SelectContext } from '../../../contexts/Select/select'
  
 export default function Carousel( {handleAddItens}) {
 

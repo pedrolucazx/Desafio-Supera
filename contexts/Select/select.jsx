@@ -11,6 +11,7 @@ export function SelectProvider({ children }) {
   useEffect(() => {
     const sortArray = (type) => {
       const types = {
+        padrao: "padrão",
         preco: "price",
         score: "score",
         alphabetical: "name"
@@ -32,6 +33,8 @@ export function SelectProvider({ children }) {
 
       if(sortProperty === "name"){
         setData(sorted2)
+      }else if(sortProperty === "padrão"){
+        setData(product)
       }else{
         setData(sorted)
       }

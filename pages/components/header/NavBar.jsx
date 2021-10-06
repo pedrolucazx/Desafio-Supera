@@ -1,8 +1,8 @@
-import styles from '../styles/NavBar.module.css'
+import styles from '../../../styles/components/header/NavBar.module.css'
 import Badge from '@mui/material/Badge'
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
-import { CardContext } from '../contexts/CardContext'
+import { CardContext } from '../../../contexts/CardContext'
 import { useContext } from 'react';
 
 export default function NavBar() {

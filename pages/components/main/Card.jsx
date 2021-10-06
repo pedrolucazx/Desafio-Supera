@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '../styles/Card.module.css';
+import styles from '../../../styles/components/main/Card.module.css';
 import StarIcon from '@mui/icons-material/Star';
 
 const Card = ({image, name,price,score, handleAddItens}) => {

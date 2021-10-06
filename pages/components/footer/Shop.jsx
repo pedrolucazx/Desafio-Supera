@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from '../styles/Shop.module.css'
+import styles from '../../../styles/components/footer/Shop.module.css'
 import CardShop from './CardShop'
 
 
-import { CardContext } from '../contexts/CardContext'
+import { CardContext } from '../../../contexts/CardContext'
 import { useContext } from 'react';
 import Calc from './Calc';
 

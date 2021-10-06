@@ -1,7 +1,7 @@
-import styles from '../styles/Product.module.css';
-import Drowpdown from '../pages/Dropdown';
-import Carousel from './Carousel';
-import {CardContext} from '../contexts/CardContext'
+import styles from '../../../styles/components/main/Product.module.css';
+import Drowpdown from '../../components/main/Dropdown';
+import Carousel from '../../components/main/Carousel';
+import {CardContext} from '../../../contexts/CardContext'
 import { useContext } from 'react';
 
 export default function Product() {

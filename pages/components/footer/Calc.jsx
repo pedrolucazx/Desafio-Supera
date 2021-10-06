@@ -1,7 +1,7 @@
 
 import { useContext } from 'react'
-import { CardContext } from '../contexts/CardContext'
-import styles from '../styles/Calc.module.css'
+import { CardContext } from '../../../contexts/CardContext'
+import styles from '../../../styles/components/footer/Calc.module.css'
 
 export default function Calc() {
 
