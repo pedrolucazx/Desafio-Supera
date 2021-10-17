@@ -30,11 +30,12 @@ export function SelectProvider({ children }) {
         }
         return 0;
       });
+      const sorted3 = [...product];
 
       if(sortProperty === "name"){
         setData(sorted2)
       }else if(sortProperty === "padrão"){
-        setData(product)
+        setData(sorted3)
       }else{
         setData(sorted)
       }
